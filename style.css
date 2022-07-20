@@ -170,6 +170,7 @@ h1, h2, h3, h4, h5, h6, p{
 }
 .footer-section h2{
     color: white;
+    margin-bottom: 30px;
 }
 footer hr{
     width: 1100px;
@@ -418,9 +419,17 @@ footer hr{
     .footer-section{
         text-align: center;
     }
+    .footer-section hr{
+        text-align: center;
+        width: 300px;
+        height: 0.5px;
+        color:gray;
+        background-color:rgba(128, 128, 128, 0.116);
+    }
     .footer-navigation{
         display: flex;
         flex-direction: column;
+        justify-content: center;
     }   
     .media-view {
        display: none;
