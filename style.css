@@ -4,7 +4,7 @@ body{
     margin: 0% auto;
     padding: 0%;
     font-family: 'Poppins', sans-serif;
-    width: 70%;
+    width: 80%;
 }
 h1, h2, h3, h4, h5, h6, p{
     padding: 0%;
@@ -89,10 +89,16 @@ h1, h2, h3, h4, h5, h6, p{
 }
 .side-nav{
     cursor: pointer;
-    background-color: aliceblue;
+    background-color: white;
     margin: 10px;
     padding: 20px;
     border-radius: 5px;
+}
+.active{
+    background-color: #DD0000;
+}
+.side-nav.active a{
+    color: white;
 }
 .side-nav a{
     text-decoration: none;
@@ -237,7 +243,7 @@ footer hr{
 @media only screen and (max-width: 768px){
     /* media query fro first section  */
     body{
-        width: 100%;
+        width: 90%;
     }
     .text-area{
         width: 60%;
@@ -283,6 +289,12 @@ footer hr{
         padding: 20px;
         border-radius: 5px;
         border: 1px solid rgba(128, 128, 128, 0.116);
+    }
+    .active{
+        background-color: #DD0000;
+    }
+    .side-nav.active a{
+        color: white;
     }
     .optional{
         display: none;
@@ -332,7 +344,7 @@ footer hr{
 @media only screen and (max-width: 600px){
     /* media query fro first section  */
     body{
-        width: 100%;
+        width: 90%;
     }
     .first-container{
         display: flex;
@@ -352,13 +364,12 @@ footer hr{
         font-size: 10px;
     }
     .image-area{
-        width: 100%;
+        width: 60%;
     }
     .image-area img{
         position: relative;
         top: 7px;
-        left: 100px;
-        width: 70%;
+        left: 30px;
     }
     
     
@@ -385,6 +396,12 @@ footer hr{
         padding: 20px;
         border-radius: 5px;
         border: 1px solid rgba(128, 128, 128, 0.116);
+    }
+    .active{
+        background-color: #DD0000;
+    }
+    .side-nav.active a{
+        color: white;
     }
     .optional{
         display: none;
