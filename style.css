@@ -79,24 +79,29 @@ h1, h2, h3, h4, h5, h6, p{
     grid-row: 1 / 4;
 }
 .side-navigation{
+    display: flex;
+    flex-direction: column;
     background-color: #161616;
     height: fit-content;
-    padding: 20px;
+    padding: 15px 15px;
     border-radius: 8px;
-}
-.side-navigation a{
-    text-decoration: none;
-    color: black;
-    font-size: 15px;
-    font-weight: 800;
+    text-align: center;
 }
 .side-nav{
-    margin: 20px;
+    cursor: pointer;
     background-color: aliceblue;
-    text-align: center;
-    padding: 12px;
+    margin: 10px;
+    padding: 20px;
     border-radius: 5px;
 }
+.side-nav a{
+    text-decoration: none;
+    color: #161616;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
 .blog-area{
     border: 1px solid rgba(128, 128, 128, 0.26);
     border-radius: 12px;
@@ -180,4 +185,47 @@ footer hr{
     font-size: 20px;
     margin: 0 10px;
     color: rgba(135, 207, 235, 0.849) ;
+}
+
+/* page-2 === upcomingMatches  */
+
+.menu-area{
+    text-align: center;
+    border: 1px solid rgba(128, 128, 128, 0.26);
+    border-radius: 12px;
+    padding: 40px 20px 40px 20px;
+}
+.match-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.menu-area img{
+    width: 100%;
+    height: 100%;
+}
+.match-menu span{
+    margin: 0 15px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.match-info .teams{
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.match-info .time{
+    font-size: 12px;
+    font-weight: 500;
+    color: #4D4D4D;
+}
+
+/* ---------------------------
+------- Media Query -------
+--------------------------- */
+
+/* Tab view  */
+@media only screen and (max-width: 768px){
+    
 }
